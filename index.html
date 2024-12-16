@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Professional Resume Builder</h1>
+        <h6 class="adnan">by Atif Younas</h6>
+        
+        <!-- Form to contain all sections -->
+        <form id="resumeForm">
+            <!-- Personal Information Section -->
+            <section id="personal-info">
+                <h2>Personal Information</h2>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter your job title">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <label for="linkedin">LinkedIn:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile URL">
+            </section>
+
+            <!-- Professional Summary Section -->
+            <section id="professional-summary">
+                <h2>Professional Summary</h2>
+                <label for="summary">Summary:</label>
+                <textarea id="summary" name="summary" placeholder="Write a brief summary of your professional background" rows="5"></textarea>
+            </section>
+
+            <!-- Work Experience Section -->
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <div id="experienceContainer">
+                    <!-- Experience entries will be dynamically added here -->
+                </div>
+                <button type="button" id="addExperience">Add Experience</button>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2>Education</h2>
+                <div id="educationContainer">
+                    <!-- Education entries will be dynamically added here -->
+                </div>
+                <button type="button" id="addEducation">Add Education</button>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <label for="skillsInput">List your skills (separate by commas):</label>
+                <input type="text" id="skillsInput" name="skills" placeholder="e.g., HTML, CSS">
+            </section>
+
+            <!-- Awards & Certifications Section -->
+            <section id="awards-certifications">
+                <h2>Awards & Certifications</h2>
+                <div id="awardsContainer">
+                    <!-- Awards & Certifications entries will be dynamically added here -->
+                </div>
+                <button type="button" id="addAward">Add Award/Certification</button>
+            </section>
+
+            <!-- Languages Section -->
+            <section id="languages">
+                <h2>Languages</h2>
+                <div id="languagesContainer">
+                    <!-- Language entries will be dynamically added here -->
+                </div>
+                <button type="button" id="addLanguage">Add Language</button>
+            </section>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="submit">Save Information</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
